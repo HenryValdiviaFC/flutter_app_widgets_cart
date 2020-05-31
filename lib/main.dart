@@ -76,23 +76,23 @@ class _MyHomePageState extends State<MyHomePage> {
           // --- PARTE 2 INICIO --//
           SizedBox(height: 25.0),
           Padding(
-            padding: EdgeInsets.only(left: 40),
+            padding: EdgeInsets.only(left: 40.0),
             child: Row(
               children: <Widget>[
                 
-                Text('Healthy',
+                Text('Bodega',
                 style: TextStyle(
-                  fontFamily: 'Arial',
+                  fontFamily: 'Roboto',
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontSize: 25.0
                 )),
               
-                SizedBox(height: 10.0),
+                SizedBox(width: 10.0),
 
-                 Text('Food',
+                 Text('UPC',
                 style: TextStyle(
-                  fontFamily: 'Arial',
+                  fontFamily: 'Roboto',
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontSize: 25.0
@@ -121,10 +121,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ListView(
                       children: [
                         //PASO 4 -- AGREGAR LOS ITEMS
-                          _buildFoodItem('assets/plate1.png', 'Salmon Food', '\$24.00'),
-                          _buildFoodItem('assets/plate2.png', 'Spring Bowl', '\$24.00'),
-                          _buildFoodItem('assets/plate6.png', 'Avocado Bowl', '\$24.00'),
-                          _buildFoodItem('assets/plate5.png', 'Berry Bowl', '\$24.00')
+                          _buildFoodItem('assets/image1.png', 'Huevos', '\$24.00'),
+                          _buildFoodItem('assets/image2.png', 'Queso', '\$24.00'),
+                          _buildFoodItem('assets/image3.png', 'Platanos', '\$24.00'),
+                          _buildFoodItem('assets/image4.png', 'Naranjas', '\$24.00')
 
                       ],
                     ),
@@ -208,7 +208,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Text(
                         foodName,
                         style: TextStyle(
-                          fontFamily: 'Arial',
+                          fontFamily: 'Roboto',
                           fontSize: 17.0,
                           fontWeight: FontWeight.bold
                         ),
@@ -216,7 +216,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Text(
                         price,
                         style: TextStyle(
-                          fontFamily: 'Arial',
+                          fontFamily: 'Roboto',
                           fontSize: 15.0,
                           color: Colors.grey
                         ),

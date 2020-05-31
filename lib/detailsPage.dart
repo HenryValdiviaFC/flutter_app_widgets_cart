@@ -39,7 +39,7 @@ class _DetailsPageState extends State<DetailsPage>{
         backgroundColor: Colors.transparent,
         elevation: 0.0,
         title: Text('Details',
-          style: TextStyle(fontFamily: 'Arial',
+          style: TextStyle(fontFamily: 'Roboto',
           fontSize: 18.0,
           color: Colors.white,
           ),
@@ -103,7 +103,7 @@ class _DetailsPageState extends State<DetailsPage>{
             
               //PASO 10 Nombre, botones y textos
               Positioned(
-                top: 25.0,
+                top: 250.0,
                 left: 25.0,
                 right: 25.0,
                 child: Column(
@@ -111,7 +111,7 @@ class _DetailsPageState extends State<DetailsPage>{
                   children: <Widget>[
                     Text(widget.foodName,
                       style: TextStyle(
-                        fontFamily: 'Arial',
+                        fontFamily: 'Roboto',
                         fontSize: 22.0,
                         fontWeight: FontWeight.bold
                       ),
@@ -124,7 +124,7 @@ class _DetailsPageState extends State<DetailsPage>{
                       children: <Widget>[
                         Text(widget.foodPrice,
                               style: TextStyle(
-                                fontFamily: 'Arial',
+                                fontFamily: 'Roboto',
                                 fontSize: 20.0,
                                 color: Colors.grey
                               )),
@@ -164,7 +164,7 @@ class _DetailsPageState extends State<DetailsPage>{
                               Text('2',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontFamily: 'Arial',
+                                      fontFamily: 'Roboto',
                                       fontSize: 15.0
                                     )), 
 
@@ -227,7 +227,7 @@ class _DetailsPageState extends State<DetailsPage>{
                             '\$52.00',
                               style: TextStyle(
                                 color: Colors.white,
-                                fontFamily: 'Arial'    
+                                fontFamily: 'Roboto'    
                               )
                           )
                         ),
@@ -270,22 +270,37 @@ class _DetailsPageState extends State<DetailsPage>{
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             
-            Text(info,
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0, left: 15.0),
+              child: Text(cardTitle,
+                      style: TextStyle(
+                        fontFamily: 'Roboto',
+                        fontSize: 12.0,
+                        color: cardTitle == selectedCard ? Colors.white : Colors.grey.withOpacity(0.7)
+                      ),),
+            ),
+            
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0, left: 15.0),
+              child: Text(info,
                   style: TextStyle(
-                    fontFamily: 'Arial',
+                    fontFamily: 'Roboto',
                     fontSize: 14.0,
                     color: cardTitle == selectedCard? Colors.white: Colors.black,
                     fontWeight: FontWeight.bold
                   )),
+            ),
 
-
-             Text(unit,
+            Padding(
+              padding: const EdgeInsets.only(top: 8.0, left: 15.0),
+              child: Text(unit,
                   style: TextStyle(
-                    fontFamily: 'Arial',
+                    fontFamily: 'Roboto',
                     fontSize: 12.0,
                     color: cardTitle == selectedCard? Colors.white: Colors.black,
                     fontWeight: FontWeight.bold
                   )),
+            ),
           ],
         ),
       ),
